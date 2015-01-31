@@ -1,0 +1,5 @@
+.b-logger__button__arrow_up:after {
+    position: relative;
+    bottom: 3px;
+    content: '\25b2';
+}
