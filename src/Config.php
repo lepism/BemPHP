@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: lepism
- * Date: 05.01.15
- * Time: 23:32
- * To change this template use File | Settings | File Templates.
- */
 
 namespace BemPHP;
 
@@ -55,13 +48,6 @@ class Config {
      */
     protected  static $_noClosingTagArr = array('area','base','basefont','br','col','frame','hr','img','input','isindex','link','meta','param');
 
-
-
-
-
-
-
-
 /* ======================================================== */
 
     /* Конструктор закрыт
@@ -90,5 +76,4 @@ class Config {
     private function __wakeup()
     {
     }
-
 }

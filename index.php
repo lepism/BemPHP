@@ -1,11 +1,11 @@
 <?php
 header('Content-type: text/html; charset=utf-8');
 
-include_once "BemPHP/BemPHP.php";
+require_once __DIR__ . '/vendor/autoload.php';
+
 use BemPHP\BemPHP;
 use BemPHP\Tree;
 
-BemPHP::register_autoload();
 BemPHP::includeBlocksList('*');
 ?>
 

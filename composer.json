@@ -1,0 +1,18 @@
+{
+    "name":        "lepism/BemPHP",
+    "description": "BemPHP",
+    "license":     "",
+    "authors":     [
+        {
+            "name":  "lepism"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BemPHP\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.3.0"
+    }
+}

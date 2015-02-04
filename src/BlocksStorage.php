@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BemPHP;
 
 /**
@@ -10,7 +9,6 @@ namespace BemPHP;
 
 final class BlocksStorage {
     static private $_blocks = array();
-
 
     /** Добавляет блок в общее хранилище
      * @param Block $block
@@ -91,5 +89,4 @@ final class BlocksStorage {
     private function __wakeup()
     {
     }
-
 }

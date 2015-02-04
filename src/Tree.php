@@ -4,7 +4,6 @@ namespace BemPHP;
 
 use BemPHP\BlockBase;
 
-
 /** Класс создания ветви БЭМ-дерева.
  * Class TreeBuilder
  * @package BemPHP

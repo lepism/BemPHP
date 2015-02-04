@@ -2,9 +2,6 @@
 
 namespace BemPHP;
 
-
-include_once "Config.php";
-
 /** Содержит глобальные пееменные, константы и функции
  * Class Globals
  * @package BemPHP
@@ -12,7 +9,6 @@ include_once "Config.php";
 final Class Globals extends Config {
 
     private static $vars = array();
-
 
     /** задает глобальные переменные
      * @param string $key имя переменной
@@ -26,16 +22,13 @@ final Class Globals extends Config {
             LogWriter::putLog('Попытка создания глобальной переменной ' . $key . ', которая уже существует.');
 
             return false;
-
         }
-
 
         self::$vars[$key] = $var;
 
         return true;
 
     }
-
 
     /** возвращает значение глобальной переменной
      * @param string $key
@@ -65,7 +58,6 @@ final Class Globals extends Config {
 
         return true;
     }
-
 
     /** возвращает true - если маска $needle находит совпадение в $haystack
      * @param string $haystack
@@ -115,7 +107,6 @@ final Class Globals extends Config {
         return false;
     }
 
-
     /** Возвращает true, если для данного тэга не нужен закрывающ тэг.
      * @param string $tag
      * @return bool
@@ -126,7 +117,6 @@ final Class Globals extends Config {
         }
         return false;
     }
-
 
     /** Генератор html кода
      * @param TreeBuilder|Block $block
@@ -148,7 +138,6 @@ final Class Globals extends Config {
 
         return $block->getLightStart()."<".$tag." class='".$block->getName()."' ".$attributes.$closeTag.$block->getLightEnd();
     }
-
 
     /* Конструктор закрыт
     */
@@ -176,6 +165,4 @@ final Class Globals extends Config {
     private function __wakeup()
     {
     }
-
 }
-?>

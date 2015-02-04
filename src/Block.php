@@ -1,9 +1,6 @@
 <?php
 
 namespace BemPHP;
-use BemPHP\LogWriter;
-use BemPHP\BlocksStorage;
-use BemPHP\BlockBase;
 
 /** Класс для описания блока
  * Class Block
@@ -14,7 +11,6 @@ class Block extends BlockBase {
     protected $_blockDir;
     protected $_css = '';
     protected $_js = '';
-
 
     /**
      * @param string $name
@@ -28,8 +24,6 @@ class Block extends BlockBase {
         $this->_blockName = $name;
         BlocksStorage::setBlock($this);
     }
-
-
 
 /*================= BLOCK DIR ==================*/
 
@@ -137,8 +131,4 @@ class Block extends BlockBase {
     public function getJs(){
         return $this->_js;
     }
-
 }
-
-
-?>

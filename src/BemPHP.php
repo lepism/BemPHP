@@ -1,37 +1,14 @@
 <?php
+
 namespace BemPHP;
 
-include_once 'Autoload.php';
-include_once 'LogWriter.php';
-
-
 //LogWriter::getServicesStorage()->registerLogService(new JsConsoleLogService());
-
 
 /** Класс подключения основных компонентов
  * Class BemPHP
  * @package BemPHP
  */
 class BemPHP {
-
-    /**
-     * Создает авторегистрацию
-     */
-    public static function register_autoload()
-    {
-        Autoload::register();
-        spl_autoload_call('BemPHP\Tree');
-        //spl_autoload_extensions(".php");
-        //spl_autoload_register();
-    }
-
-    /**
-     * Удаляет авторегистрацию
-     */
-    public static function unregister_autoload()
-    {
-        Autoload::unregister();
-    }
 
     /** Возвращает CSS код всех инициализированных блоков.
      * @return string
@@ -71,7 +48,4 @@ class BemPHP {
     public static function showLogger(){
         return new Logger();
     }
-
 }
-
-?>
