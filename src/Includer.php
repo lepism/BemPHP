@@ -1,9 +1,6 @@
 <?php
-namespace BemPHP;
 
-use BemPHP\LogWriter;
-use BemPHP\Globals;
-use BemPHP\BlocksStorage;
+namespace BemPHP;
 
 /** Загрузчик файлов, описывающих блоки
  * Class Includer
