@@ -1,7 +1,8 @@
 <?php
 header('Content-type: text/html; charset=utf-8');
 
-require_once __DIR__ . '/vendor/autoload.php';
+define('ROOT_DIR', __DIR__);
+require_once ROOT_DIR . '/vendor/autoload.php';
 
 use BemPHP\BemPHP;
 use BemPHP\Tree;
